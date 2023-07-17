@@ -8,8 +8,5 @@ npm i react-native-game-engine <br />
 npx expo start <br />
 
 include physics.js file to main directory <br />
-change App.js to main directory <br />
-create a folder named entities <br />
-add index.js file to entities folder <br />
-create a folder named components <br />
-add remaining files to components folder <br />
+change App.js in the main directory with the provided one <br />
+
