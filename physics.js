@@ -15,6 +15,8 @@ const Physics = (entities, { touches, time, dispatch }) => {
             if (touch.event.pageX < width / 3 && entities.Mario.body.position.x >= 100) {
                 Matter.Body.translate(entities['Floor'].body, { x: +20, y: 0 });
                 Matter.Body.translate(entities['Floor2'].body, { x: +20, y: 0 });
+                Matter.Body.translate(entities['Floor3'].body, { x: +20, y: 0 });
+
                 Matter.Body.translate(entities['Stairs1'].body, { x: +20, y: 0 });
                 Matter.Body.translate(entities['Stairs2'].body, { x: +20, y: 0 });
                 Matter.Body.translate(entities['Stairs3'].body, { x: +20, y: 0 });
@@ -30,8 +32,14 @@ const Physics = (entities, { touches, time, dispatch }) => {
                 Matter.Body.translate(entities['Stairs12'].body, { x: +20, y: 0 });
 
                 Matter.Body.translate(entities['Tube1'].body, { x: +20, y: 0 });
+                Matter.Body.translate(entities['Tube2'].body, { x: +20, y: 0 });
+                Matter.Body.translate(entities['Tube3'].body, { x: +20, y: 0 });
+
+                Matter.Body.translate(entities['MadMushroom1'].body, { x: +20, y: 0 });
 
                 Matter.Body.translate(entities['MysteryBrick1'].body, { x: +20, y: 0 });
+                Matter.Body.translate(entities['MysteryBrick2'].body, { x: +20, y: 0 });
+                Matter.Body.translate(entities['NormalBrick1'].body, { x: +20, y: 0 });
 
 
 
@@ -47,6 +55,8 @@ const Physics = (entities, { touches, time, dispatch }) => {
             } else {
                 Matter.Body.translate(entities['Floor'].body, { x: -20, y: 0 });
                 Matter.Body.translate(entities['Floor2'].body, { x: -20, y: 0 });
+                Matter.Body.translate(entities['Floor3'].body, { x: -20, y: 0 });
+
                 Matter.Body.translate(entities['Stairs1'].body, { x: -20, y: 0 });
                 Matter.Body.translate(entities['Stairs2'].body, { x: -20, y: 0 });
                 Matter.Body.translate(entities['Stairs3'].body, { x: -20, y: 0 });
@@ -62,16 +72,26 @@ const Physics = (entities, { touches, time, dispatch }) => {
                 Matter.Body.translate(entities['Stairs12'].body, { x: -20, y: 0 });
 
                 Matter.Body.translate(entities['Tube1'].body, { x: -20, y: 0 });
+                Matter.Body.translate(entities['Tube2'].body, { x: -20, y: 0 });
+                Matter.Body.translate(entities['Tube3'].body, { x: -20, y: 0 });
+
+                Matter.Body.translate(entities['MadMushroom1'].body, { x: -20, y: 0 });
+
 
                 Matter.Body.translate(entities['MysteryBrick1'].body, { x: -20, y: 0 });
-
+                Matter.Body.translate(entities['MysteryBrick2'].body, { x: -20, y: 0 });
+                Matter.Body.translate(entities['NormalBrick1'].body, { x: -20, y: 0 });
+                
             }
         }
 
         if (entities.Mario.body.position.x < 100) {
             Matter.Body.translate(entities['Mario'].body, { x: +20, y: 0 });
+            
             Matter.Body.translate(entities['Floor'].body, { x: +20, y: 0 });
             Matter.Body.translate(entities['Floor2'].body, { x: +20, y: 0 });
+            Matter.Body.translate(entities['Floor3'].body, { x: +20, y: 0 });
+
             Matter.Body.translate(entities['Stairs1'].body, { x: +20, y: 0 });
             Matter.Body.translate(entities['Stairs2'].body, { x: +20, y: 0 });
             Matter.Body.translate(entities['Stairs3'].body, { x: +20, y: 0 });
@@ -87,8 +107,16 @@ const Physics = (entities, { touches, time, dispatch }) => {
             Matter.Body.translate(entities['Stairs12'].body, { x: +20, y: 0 });
 
             Matter.Body.translate(entities['Tube1'].body, { x: +20, y: 0 });
+            Matter.Body.translate(entities['Tube2'].body, { x: +20, y: 0 });
+            Matter.Body.translate(entities['Tube3'].body, { x: +20, y: 0 });
+
+            Matter.Body.translate(entities['MadMushroom1'].body, { x: +20, y: 0 });
+
 
             Matter.Body.translate(entities['MysteryBrick1'].body, { x: +20, y: 0 });
+            Matter.Body.translate(entities['MysteryBrick2'].body, { x: +20, y: 0 });
+            Matter.Body.translate(entities['NormalBrick1'].body, { x: +20, y: 0 });
+            
 
         }
 
